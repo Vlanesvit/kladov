@@ -119,51 +119,6 @@ if (document.querySelector('.preloader')) {
 }
 
 /* ====================================
-Инициализация библиотеки для input file
-==================================== */
-function initFilepond() {
-	// Регаем плагины
-	FilePond.registerPlugin(
-		FilePondPluginFileEncode,
-		FilePondPluginFileValidateSize,
-		FilePondPluginFileValidateType,
-		FilePondPluginImageExifOrientation,
-		FilePondPluginImageCrop,
-		FilePondPluginImageResize,
-	);
-
-	const inputs = document.querySelectorAll('input.filepond')
-	inputs.forEach(input => {
-		// Инициализация
-		FilePond.create(
-			input,
-			{
-				labelIdle: `
-				<span class="upload-icon">
-					<img src="./img/icons/upload.svg" alt="">
-				</span>
-				<span class="anc-16-medium">
-					Загрузить проект
-				</span>
-				<span class="anc-12-regular">
-					Общий вес файлов не более 15 Мб
-				</span>`,
-				// imagePreviewHeight: 170,
-				imageCropAspectRatio: '1:1',
-				// imageResizeTargetWidth: 200,
-				// imageResizeTargetHeight: 200,
-				// stylePanelLayout: 'compact circle',
-				// styleLoadIndicatorPosition: 'center bottom',
-				// styleProgressIndicatorPosition: 'right bottom',
-				// styleButtonRemoveItemPosition: 'left bottom',
-				// styleButtonProcessItemPosition: 'right bottom',
-			}
-		);
-	});
-}
-initFilepond()
-
-/* ====================================
 Кастомный курсор
 ==================================== */
 const addCursorHover = (hoveredElement, selectedElement, newClass) => {
@@ -204,6 +159,9 @@ const addCursorMove = (hoveredElement, selectedElement) => {
 		}
 	});
 }
+addCursorHover(".rs-slider-block__slider", ".rs-slider-block .cursor", "cursor__active");
+addCursorMove(".rs-slider-block__slider", ".rs-slider-block .cursor__circle")
+addCursorDrag(".rs-slider-block__slider", ".rs-slider-block .cursor__circle", "cursor__circle__drag")
 
 /* ====================================
 Спойлеры/аккордионы

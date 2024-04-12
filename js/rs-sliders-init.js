@@ -46,6 +46,8 @@ function initSliders() {
 				touchRadio: 1,
 				// Угол срабатывания свайпа/перетаскивания
 				touchAngle: 45,
+				// Cобытие touchstart (pointerdown)
+				touchStartPreventDefault: false,
 
 				// Цикличность слайдера
 				loop: true,
@@ -114,6 +116,8 @@ function initSliders() {
 				touchRadio: 1,
 				// Угол срабатывания свайпа/перетаскивания
 				touchAngle: 45,
+				// Cобытие touchstart (pointerdown)
+				touchStartPreventDefault: false,
 
 				// Цикличность слайдера
 				loop: true,
@@ -176,6 +180,8 @@ function initSliders() {
 					touchRadio: 1,
 					// Угол срабатывания свайпа/перетаскивания
 					touchAngle: 45,
+					// Cобытие touchstart (pointerdown)
+					touchStartPreventDefault: false,
 
 					// Цикличность слайдера
 					loop: true,
@@ -252,6 +258,8 @@ function initSliders() {
 					touchRadio: 1,
 					// Угол срабатывания свайпа/перетаскивания
 					touchAngle: 45,
+					// Cобытие touchstart (pointerdown)
+					touchStartPreventDefault: false,
 
 					// Цикличность слайдера
 					loop: true,
@@ -317,6 +325,8 @@ function initSliders() {
 				touchRadio: 1,
 				// Угол срабатывания свайпа/перетаскивания
 				touchAngle: 45,
+				// Cобытие touchstart (pointerdown)
+				touchStartPreventDefault: false,
 
 				// Цикличность слайдера
 				loop: true,
@@ -405,6 +415,8 @@ function initSliders() {
 				touchRadio: 1,
 				// Угол срабатывания свайпа/перетаскивания
 				touchAngle: 45,
+				// Cобытие touchstart (pointerdown)
+				touchStartPreventDefault: false,
 
 				// Цикличность слайдера
 				loop: true,
