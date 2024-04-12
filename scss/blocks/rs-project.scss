@@ -1,0 +1,155 @@
+.rs-project {
+	&.project-page {
+		@media (min-width: 991.98px) {
+			margin-top: 120px;
+		}
+	}
+
+	// .rs-project__container
+	&__container {
+		.section-header {
+			.project-page & {
+				justify-content: center;
+				text-align: center;
+
+				&__title {
+					max-width: 1395px;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+
+	// .rs-project__wrapper
+	&__wrapper {
+		.project-page & {
+			margin-top: 100px;
+
+			@media (max-width: 1439.98px) {
+				margin-top: 60px;
+			}
+
+			@media (max-width: 991.98px) {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	// .rs-project__main
+	&__main {
+		margin-bottom: 60px;
+
+		@media (max-width: 1439.98px) {
+			margin-bottom: 40px;
+		}
+
+		@media (max-width: 991.98px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	// .rs-project__list
+	&__list {
+	}
+
+	&__wrap {
+		&:not(:last-child) {
+			margin-bottom: 60px;
+
+			@media (max-width: 1439.98px) {
+				margin-bottom: 40px;
+			}
+
+			@media (max-width: 991.98px) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	// .rs-project__block
+	&__block {
+		display: flex;
+		margin: -12px;
+
+		@media (max-width: 1439.98px) {
+			margin: -7.5px;
+		}
+
+		@media (max-width: 991.98px) {
+			margin: -5px;
+		}
+
+		&:not(:last-child) {
+			.project-page & {
+				margin-bottom: 48px;
+
+				@media (max-width: 1439.98px) {
+					margin-bottom: 32.5px;
+				}
+
+				@media (max-width: 991.98px) {
+					margin-bottom: 15px;
+				}
+			}
+		}
+
+		&._33-66 {
+			.rs-project__item {
+				&:nth-child(1) {
+					flex: 0 0 33.33333%;
+				}
+
+				&:nth-child(2) {
+					flex: 0 0 66.66666%;
+				}
+			}
+		}
+
+		&._33-33-33 {
+			.rs-project__item {
+				flex: 0 0 33.33333%;
+			}
+		}
+	}
+
+	// .rs-project__item
+	&__item {
+		padding: 12px;
+		width: 100%;
+		height: 100%;
+
+		@media (max-width: 1439.98px) {
+			padding: 7.5px;
+		}
+
+		@media (max-width: 991.98px) {
+			padding: 5px;
+		}
+	}
+
+	// .rs-project__img
+	&__img {
+		width: 100%;
+		height: 640px;
+		position: relative;
+
+		@media (max-width: 1920px) {
+			height: calc(183px + (640 - 183) * ((100vw - 320px) / (1920 - 320)));
+		}
+
+		img,
+		iframe,
+		video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	&__desc {
+		margin-top: 30px;
+	}
+}

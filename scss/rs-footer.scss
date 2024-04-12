@@ -1,0 +1,254 @@
+.rs-footer {
+	@media (min-width: 991.98px) {
+		margin-bottom: 9px;
+		border-top: 1px solid #222;
+		border-bottom: 1px solid #222;
+	}
+
+	// .rs-footer__container
+	&__container {
+	}
+
+	// .rs-footer__wrapper
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+
+		@media (min-width: 991.98px) {
+			margin-right: -1.6%;
+		}
+
+		@media (max-width: 991.98px) {
+			flex-direction: column;
+		}
+	}
+
+	// .rs-footer__request
+	&__request {
+		width: 100%;
+
+		@media (min-width: 991.98px) {
+			max-width: 50%;
+			padding: 6.9% 6% 6.6% 0%;
+
+			@media (max-width: 1439.98px) {
+				padding: 5%;
+			}
+		}
+
+		@media (max-width: 991.98px) {
+			order: 2;
+			margin-top: 24px;
+		}
+
+		.section-header {
+			@media (min-width: 991.98px) {
+				margin-bottom: 46px;
+			}
+
+			@media (max-width: 991.98px) {
+				margin-bottom: 8px;
+			}
+		}
+	}
+
+	// .rs-footer__form
+	&__form {
+	}
+
+	// .rs-footer__info
+	&__info {
+		width: 100%;
+
+		@media (min-width: 991.98px) {
+			max-width: 50.8%;
+			padding: 14.5% 6.1% 6.9% 6%;
+			border-left: 1px solid #222;
+			border-right: 1px solid #222;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+
+			@media (max-width: 1439.98px) {
+				max-width: 50%;
+				padding: 10% 5% 5%;
+			}
+		}
+
+		@media (max-width: 991.98px) {
+			order: 1;
+		}
+
+		.rs-footer__scroll {
+			@media (max-width: 991.98px) {
+				display: none;
+			}
+		}
+
+		.rs-footer__copyright {
+			@media (max-width: 991.98px) {
+				display: none;
+			}
+		}
+	}
+
+	// .rs-footer__list
+	&__list {
+		@media (min-width: 991.98px) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 62px 32px;
+			margin: 0px 0px auto 0px;
+
+			@media (max-width: 1439.98px) {
+				gap: 30px 15px;
+			}
+		}
+	}
+
+	// .rs-footer__item
+	&__item {
+		@media (max-width: 991.98px) {
+			padding: 24px 0px;
+			border-bottom: 1px solid #222;
+
+			&:first-child {
+				border-top: 1px solid #222;
+			}
+
+			&:last-child {
+				ul {
+					max-width: 375px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					li {
+						&:not(:last-child) {
+							margin-bottom: 0px;
+							margin-right: 10px;
+						}
+					}
+				}
+			}
+		}
+
+		ul {
+			margin-top: 16px;
+
+			@media (max-width: 991.98px) {
+				margin-top: 8px;
+			}
+
+			li {
+				&:not(:last-child) {
+					margin-bottom: 16px;
+				}
+
+				font-weight: 300;
+				font-size: 19px;
+				// line-height: 30px;
+				line-height: 160%;
+				color: #fff;
+
+				@media (max-width: 1559.98px) {
+					font-size: 16px;
+				}
+
+				@media (max-width: 1439.98px) {
+					font-size: 14px;
+				}
+
+				@media (max-width: 991.98px) {
+					font-size: 13px;
+					line-height: 140%;
+				}
+
+				a {
+					transition: color 0.3s ease 0s;
+
+					@media (any-hover: hover) {
+						&:hover {
+							color: var(--primary-color, #7f5b47);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// .rs-footer__copyright
+	&__copyright {
+		font-weight: 500;
+		font-size: 13px;
+		// line-height: 19px;
+		line-height: 150%;
+		opacity: 0.5;
+
+		@media (min-width: 991.98px) {
+			text-align: right;
+		}
+
+		@media (max-width: 1849.98px) {
+			padding-top: 24px;
+			padding-bottom: 24px;
+		}
+	}
+
+	&__bottom {
+		margin-top: 24px;
+		order: 3;
+
+		@media (min-width: 991.98px) {
+			display: none;
+		}
+	}
+
+	// .rs-footer__scroll
+	&__scroll {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		text-align: left;
+		font-weight: 500;
+		font-size: 16px;
+		// line-height: 26px;
+		line-height: 160%;
+		text-align: center;
+
+		@media (min-width: 1849.98px) {
+			position: absolute;
+			bottom: 0;
+			left: 100%;
+			padding: 12% 5.5% 12% 5.5%;
+			writing-mode: vertical-rl;
+			transform: rotate(180deg);
+		}
+
+		@media (max-width: 1849.98px) {
+			padding: 24px 0px;
+		}
+
+		@media (max-width: 991.98px) {
+			justify-content: space-between;
+			width: 100%;
+			border-top: 1px solid #222;
+			border-bottom: 1px solid #222;
+		}
+
+		svg {
+			margin-top: 4px;
+
+			@media (max-width: 1849.98px) {
+				margin-top: 0px;
+				margin-left: 10px;
+			}
+
+			@media (min-width: 1849.98px) {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+}

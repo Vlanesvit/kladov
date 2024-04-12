@@ -1,0 +1,144 @@
+.pagging {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 34px;
+
+	@media (max-width: 1439.98px) {
+		margin-top: 30px;
+	}
+
+	@media (max-width: 1169.98px) {
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	// .pagging__arrow
+	&__arrow {
+		transition: border-color 0.3s ease 0s;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 160%;
+		letter-spacing: 0.03em;
+		color: #3c3c3c;
+		min-width: 45px;
+		max-width: 45px;
+		min-height: 45px;
+		max-height: 45px;
+		border: 1px solid #ae9cab;
+		border-radius: 4px;
+
+		@media (max-width: 1169.98px) {
+			min-width: 35px;
+			min-height: 35px;
+			max-width: 35px;
+			max-height: 35px;
+			font-size: 10px;
+		}
+
+		&:disabled {
+			display: none;
+		}
+
+		svg {
+			path {
+				transition: fill 0.3s ease 0s;
+			}
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: #c80151;
+
+				svg {
+					path {
+						fill: #c80151;
+					}
+				}
+			}
+		}
+
+		&.pagging__arrow_go {
+			margin-right: 14px;
+
+			@media (max-width: 1169.98px) {
+				margin-right: 5px;
+			}
+		}
+
+		&.pagging__arrow_back {
+			margin-left: 14px;
+
+			@media (max-width: 1169.98px) {
+				margin-left: 5px;
+			}
+		}
+	}
+
+	// .pagging__list
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	// .pagging__item
+	&__item {
+		&:not(:last-child) {
+			margin-right: 14px;
+
+			@media (max-width: 1169.98px) {
+				margin-right: 5px;
+			}
+		}
+	}
+
+	// .pagging__link
+	&__link,
+	&__more {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.3s ease 0s;
+		text-align: center;
+		min-width: 45px;
+		max-width: 45px;
+		min-height: 45px;
+		max-height: 45px;
+		border: 1px solid #ae9cab;
+		border-radius: 4px;
+		font-weight: 800;
+		font-size: 12px;
+		text-align: center;
+		color: #ae9cab;
+
+		@media (max-width: 1169.98px) {
+			min-width: 35px;
+			min-height: 35px;
+			max-width: 35px;
+			max-height: 35px;
+			font-size: 10px;
+		}
+	}
+
+	&__more {
+		border-color: transparent;
+	}
+
+	&__link {
+		&._active {
+			border-color: #c80151;
+			color: #c80151;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: #c80151;
+				color: #c80151;
+			}
+		}
+	}
+}

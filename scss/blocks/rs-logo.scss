@@ -1,0 +1,83 @@
+.rs-logo {
+	// .rs-logo__container
+	&__container {
+		.section-header {
+			max-width: 800px;
+		}
+	}
+
+	&__action {
+		justify-content: flex-end;
+		margin-top: 32px;
+
+		@media (min-width: 991.98px) {
+			display: none;
+		}
+	}
+
+	// .rs-logo__slider
+	&__slider {
+	}
+
+	// .rs-logo__swiper
+	&__swiper {
+	}
+
+	// .rs-logo__slide
+	&__slide {
+	}
+
+	// .rs-logo__item
+	&__item {
+		@media (any-hover: hover) {
+			&:hover {
+				.rs-logo__img {
+					img {
+						&:first-child {
+							opacity: 0;
+							visibility: hidden;
+						}
+
+						&:last-child {
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// .rs-logo__img
+	&__img {
+		position: relative;
+		padding-bottom: 60.82%;
+		width: 100%;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			transition: all 0.3s ease 0s;
+
+			&:last-child {
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			&:first-child {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	// .rs-logo__desc
+	&__desc {
+		margin-top: 8px;
+		text-align: center;
+	}
+}

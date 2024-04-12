@@ -1,0 +1,159 @@
+.rs-services {
+	// .rs-services__container
+	&__container {
+		@media (min-width: 991.98px) {
+			max-width: calc(1394px + 32px);
+		}
+
+		.section-header {
+			max-width: 1160px;
+		}
+	}
+
+	// .rs-services__wrapper
+	&__wrapper {
+		position: relative;
+	}
+
+	&__block {
+		@media (max-width: 1649.98px) {
+			padding-left: 110px;
+		}
+
+		@media (max-width: 991.98px) {
+			padding-left: 32px;
+		}
+	}
+
+	// .rs-services__cursor
+	&__cursor {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: calc(100% - 72px);
+		width: 11.94rem;
+		height: 11.94rem;
+		border-radius: 50%;
+		border: 1px solid #7f5b47;
+		z-index: 11;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@media (max-width: 1439.98px) {
+			width: 9rem;
+			height: 9rem;
+			right: calc(100% - 50px);
+		}
+
+		@media (max-width: 991.98px) {
+			width: 3.94rem;
+			height: 3.94rem;
+			right: calc(100% - 30px);
+		}
+	}
+
+	// .rs-services__button-next
+	&__button-next {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__button-desk {
+		span {
+			font-weight: 500;
+			font-size: 13px;
+			// line-height: 19px;
+			line-height: 150%;
+			text-align: center;
+			color: #fff;
+			margin-right: 4px;
+		}
+
+		@media (max-width: 991.98px) {
+			display: none;
+		}
+	}
+
+	&__button-mob {
+		width: 25px;
+		height: 25px;
+
+		@media (min-width: 991.98px) {
+			display: none;
+		}
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	// .rs-services__slider
+	&__slider {
+		margin-right: -100%;
+		padding-right: -100%;
+	}
+
+	// .rs-services__swiper
+	&__swiper {
+	}
+
+	// .rs-services__slide
+	&__slide {
+		width: auto;
+		min-height: 100px;
+		height: auto;
+	}
+
+	// .rs-services__item
+	&__item {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	// .rs-services__link
+	&__link {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	// .rs-services__img
+	&__img {
+		width: 100%;
+		height: 640px;
+
+		@media (max-width: 1920px) {
+			height: calc(183px + (640 - 183) * ((100vw - 320px) / (1920 - 320)));
+		}
+
+		img,
+		iframe,
+		video {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	// .rs-services__desc
+	&__desc {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 24px 35px;
+		background: #000;
+
+		@media (max-width: 991.98px) {
+			padding: 0;
+			margin-top: 8px;
+			position: relative;
+			bottom: auto;
+			right: auto;
+		}
+	}
+}

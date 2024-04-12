@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+	<link rel="stylesheet" href="https://unpkg.com/filepond@^4/dist/filepond.css" />
+	<link rel="stylesheet" href="css/rs-style.css" />
+
+	<title>Мебель для дома - Kladov</title>
+</head>
+
+<body>
+
+	<div class="preloader">
+		<div class="preloader__logo">
+			<svg viewBox="0 0 319 50" fill="none">
+				<g clip-path="url(#clip0_2220_11611)">
+					<g class="preloader__letter preloader__letter-1" clip-path="url(#clip6_2220_11611)">
+						<path
+							d="M10.2473 24.9287V46.1547H13.5977V47.874H0V46.1547H3.40584V2.18166H0V0.462402H13.5977V2.18166H10.2473V22.8456L13.6025 21.2917L29.0948 2.18166H25.4797V0.462402H34.8609V2.18166H31.3976L18.7993 17.721L39.0941 46.1547H42.4155V47.874H26.9074V46.1547H30.3447L13.9644 23.2095L10.2473 24.9287Z"
+							fill="white" />
+					</g>
+					<g class="preloader__letter preloader__letter-2" clip-path="url(#clip5_2220_11611)">
+						<path
+							d="M94.9251 30.0207H96.8987L96.1749 47.8745H60.9785V46.1552H64.3348V2.18215H60.9785V0.462891H74.422V2.18215H71.1765V46.1552H80.9785C83.2152 46.1552 85.145 45.8135 86.7677 45.1302C88.3904 44.4469 89.7939 43.2674 90.9778 41.5926C91.5917 40.7108 92.1236 39.8293 92.5734 38.9474C93.0226 38.0659 93.3899 37.1622 93.6752 36.2363C93.9601 35.2885 94.2068 34.3021 94.4151 33.2775C94.6237 32.2525 94.7934 31.1667 94.9251 30.0207Z"
+							fill="white" />
+					</g>
+					<g class="preloader__letter preloader__letter-3" clip-path="url(#clip4_2220_11611)">
+						<path
+							d="M148.207 46.6179L130.971 0H128.998L126.256 8.41215L134.717 31.4093H134.721L140.313 46.6179L136.387 46.6182V48.3289L151.531 48.3372V46.6179H148.207Z"
+							fill="white" />
+						<path d="M111.583 46.619V46.6177H110.488V48.3369L119.832 48.3287V46.6187L111.583 46.619Z"
+							fill="white" />
+					</g>
+					<g class="preloader__letter preloader__letter-4" clip-path="url(#clip3_2220_11611)">
+						<path
+							d="M188.608 47.8745H167.953V46.1552H171.273V2.18215H167.953V0.462891H188.608C190.604 0.462891 192.571 0.776881 194.512 1.4052C196.453 2.03319 198.322 3.00864 200.12 4.33123C201.918 5.65382 203.497 7.22958 204.857 9.0592C206.239 10.9548 207.335 13.192 208.146 15.7709C208.958 18.3498 209.364 21.204 209.364 24.334C209.364 27.464 208.963 30.307 208.163 32.8641C207.362 35.4208 206.26 37.6361 204.857 39.5095C203.826 40.8983 202.675 42.1106 201.403 43.1465C200.131 44.1824 198.788 45.053 197.374 45.7585C195.959 46.4637 194.507 46.9926 193.016 47.3452C191.524 47.6978 190.055 47.8745 188.608 47.8745ZM187.095 2.18215H178.115V46.1552H187.095C189.288 46.1552 191.239 45.7585 192.95 44.9648C194.66 44.1715 196.052 43.1134 197.127 41.7908C198.202 40.4685 199.09 38.8593 199.791 36.9637C200.493 35.0463 200.981 33.0735 201.255 31.0457C201.529 29.0176 201.666 26.7807 201.666 24.334C201.666 21.8874 201.524 19.6392 201.239 17.5892C200.954 15.5392 200.471 13.5446 199.791 11.6049C199.287 10.1942 198.662 8.91023 197.917 7.75301C197.171 6.59579 196.278 5.60428 195.236 4.77744C194.194 3.95096 192.999 3.3117 191.65 2.86002C190.302 2.40799 188.783 2.18215 187.095 2.18215Z"
+							fill="white" />
+					</g>
+					<g class="preloader__letter preloader__letter-5" clip-path="url(#clip2_2220_11611)">
+						<path
+							d="M237.193 46.4808C226.849 41.9568 220.938 30.3798 223.848 18.987C226.692 7.60337 237.325 0.255856 248.593 1.21354C240.517 1.69973 232.573 9.52149 229.829 20.5539C227.02 31.5951 230.327 42.2151 237.193 46.4808ZM244.769 48.4294C252.845 47.9452 260.789 40.1235 263.532 29.0894C266.276 18.0549 263.035 7.43015 256.171 3.16206C266.514 7.68606 272.425 19.2654 269.514 30.6559C266.669 42.0395 256.039 49.387 244.769 48.4294Z"
+							fill="white" />
+					</g>
+					<g class="preloader__letter preloader__letter-6" clip-path="url(#clip1_2220_11611)">
+						<path d="M315.674 2.43801H317.177H319V0.71875H309.568V2.43801H313.437H315.674Z" fill="white" />
+						<path
+							d="M289.162 2.43801H293.034V0.71875H277.925V2.43801H281.269L298.504 48.924H300.477L303.168 40.6933L289.162 2.43801Z"
+							fill="white" />
+					</g>
+				</g>
+				<defs>
+					<clipPath id="clip0_2220_11611">
+						<rect width="319" height="49.3244" fill="white" />
+					</clipPath>
+					<clipPath id="clip1_2220_11611">
+						<rect width="41.0753" height="48.2053" fill="white" transform="translate(277.925 0.71875)" />
+					</clipPath>
+					<clipPath id="clip2_2220_11611">
+						<rect width="47.1489" height="47.3831" fill="white" transform="translate(223.107 1.12988)" />
+					</clipPath>
+					<clipPath id="clip3_2220_11611">
+						<rect width="41.4102" height="47.4116" fill="white" transform="translate(167.953 0.462891)" />
+					</clipPath>
+					<clipPath id="clip4_2220_11611">
+						<rect width="42" height="49" fill="white" transform="translate(110)" />
+					</clipPath>
+					<clipPath id="clip5_2220_11611">
+						<rect width="35.9202" height="47.4116" fill="white" transform="translate(60.9785 0.462891)" />
+					</clipPath>
+					<clipPath id="clip6_2220_11611">
+						<rect width="43" height="48" fill="white" />
+					</clipPath>
+				</defs>
+			</svg>
+
+		</div>
+	</div>
+
+	<div class="wrapper">
+
+		<link rel="stylesheet" href="css/rs-header.css" />
+		<script src="js/rs-header.js" defer></script>
+		<header>
+			<!-- _header-transparent - класс для расположения шапки над блоком -->
+			<div class="rs-header _header-transparent">
+				<div class="rs-header__main">
+					<div class="rs-header__container">
+						<div class="rs-header__wrapper">
+							<div class="rs-header__left">
+								<div class="rs-header__menu menu">
+									<button type="button" class="menu__icon icon-menu">
+										<span class="menu__icon_burger">
+											<svg width="16" height="17" viewBox="0 0 16 17" fill="none">
+												<rect y="4.5" width="16" height="2" fill="#7F5B47" />
+												<rect y="8.5" width="16" height="2" fill="#7F5B47" />
+												<rect y="12.5" width="16" height="2" fill="#7F5B47" />
+											</svg>
+										</span>
+										<span class="menu__icon_text">
+											<span>меню</span>
+											<span>закрыть</span>
+										</span>
+									</button>
+
+									<ul class="menu__list menu__contact">
+										<li class="menu-item"><a href="#">контакты</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="rs-header__logo">
+								<a href="#"><img src="./img/header/logo.svg" alt=""></a>
+							</div>
+
+							<div class="rs-header__right">
+								<div class="rs-header__menu menu">
+									<ul class="menu__list menu__contact">
+										<li class="menu-item"><a href="tel:74957774250">+7 495 777-42-50</a></li>
+									</ul>
+								</div>
+
+								<div class="rs-header__btn">
+									<a href="#" class="rs-btn _btn-primary">Оставить заявку</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="menu__block">
+							<div class="menu__wrap">
+								<nav class="menu__body">
+									<ul class="menu__list">
+										<li class="menu-item"><a href="#">Мебель для бизнеса</a></li>
+										<li class="menu-item"><a href="#">Мебель для дома</a></li>
+										<li class="menu-item"><a href="#">Стеновые панели</a></li>
+										<li class="menu-item"><a href="#">Кухни</a></li>
+										<li class="menu-item"><a href="#">Двери</a></li>
+										<li class="menu-item"><a href="#">Сотрудничество</a></li>
+										<li class="menu-item menu__dropdown">
+											<a href="#">Портфолио</a>
+
+											<div class="menu__dropdown_block">
+												<div class="menu__dropdown_head">
+													<button type="button" class="menu__dropdown_back"></button>
+													<h6>Портфолио</h6>
+												</div>
+
+												<div class="menu__dropdown_body">
+													<div class="menu__wrap">
+														<ul>
+															<li class="menu-item"><a href="#">Коммерческая
+																	недвижимость</a>
+															</li>
+															<li class="menu-item"><a href="#">Жильё</a></li>
+														</ul>
+													</div>
+
+													<div class="menu__wrap menu__contact">
+														<h6>Свяжитесь с нами</h6>
+														<ul>
+															<li class="menu-item"><a href="tel:74957774250">+7 495
+																	777-42-50</a>
+															</li>
+															<li class="menu-item"><a
+																	href="mailto:info@kladov-мск.ru">info@kladov-мск.ru</a>
+															</li>
+														</ul>
+													</div>
+
+													<div class="menu__wrap">
+														<h6>Соцсети</h6>
+														<ul>
+															<li class="menu-item"><a href="#">Вконтакте</a></li>
+															<li class="menu-item"><a href="#">Youtube</a></li>
+															<li class="menu-item"><a href="#">WhatsApp</a></li>
+															<li class="menu-item"><a href="#">Telegram</a></li>
+														</ul>
+													</div>
+												</div>
+
+												<div class="rs-header__btn">
+													<a href="#" class="rs-btn _btn-primary">Оставить заявку</a>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</nav>
+							</div>
+
+							<div class="menu__wrap">
+								<h6>Меню</h6>
+								<ul class="menu__list">
+									<li class="menu-item"><a href="#">О компании</a></li>
+									<li class="menu-item"><a href="#">Услуги</a></li>
+									<li class="menu-item"><a href="#">Производство</a></li>
+									<li class="menu-item"><a href="#">Коммерческая недвижимость</a></li>
+									<li class="menu-item"><a href="#">Частное жильё</a></li>
+									<li class="menu-item"><a href="#">Отзывы</a></li>
+									<li class="menu-item"><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+
+							<div class="menu__wrap menu__contact">
+								<h6>Свяжитесь с нами</h6>
+								<ul class="menu__list">
+									<li class="menu-item"><a href="tel:74957774250">+7 495 777-42-50</a></li>
+									<li class="menu-item"><a href="mailto:info@kladov-мск.ru">info@kladov-мск.ru</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="menu__wrap">
+								<h6>Соцсети</h6>
+								<ul class="menu__list">
+									<li class="menu-item"><a href="#">Вконтакте</a></li>
+									<li class="menu-item"><a href="#">Youtube</a></li>
+									<li class="menu-item"><a href="#">WhatsApp</a></li>
+									<li class="menu-item"><a href="#">Telegram</a></li>
+								</ul>
+							</div>
+
+							<div class="rs-header__btn">
+								<a href="#" class="rs-btn _btn-primary">Оставить заявку</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="rs-header__scroll">
+					<div class="rs-header__container">
+						<div class="rs-header__wrapper">
+							<div class="rs-header__menu menu">
+								<button type="button" class="menu__icon icon-menu">
+									<span class="menu__icon_burger">
+										<svg width="16" height="17" viewBox="0 0 16 17" fill="none">
+											<rect y="4.5" width="16" height="2" fill="#7F5B47" />
+											<rect y="8.5" width="16" height="2" fill="#7F5B47" />
+											<rect y="12.5" width="16" height="2" fill="#7F5B47" />
+										</svg>
+									</span>
+								</button>
+							</div>
+
+							<div class="rs-header__logo">
+								<a href="#"><img src="./img/header/logo.svg" alt=""></a>
+							</div>
+
+							<div class="menu__block">
+								<div class="menu__wrap">
+									<nav class="menu__body">
+										<ul class="menu__list">
+											<li class="menu-item"><a href="#">Мебель для бизнеса</a></li>
+											<li class="menu-item"><a href="#">Мебель для дома</a></li>
+											<li class="menu-item"><a href="#">Стеновые панели</a></li>
+											<li class="menu-item"><a href="#">Кухни</a></li>
+											<li class="menu-item"><a href="#">Двери</a></li>
+											<li class="menu-item"><a href="#">Сотрудничество</a></li>
+											<li class="menu-item menu__dropdown">
+												<a href="#">Портфолио</a>
+
+												<div class="menu__dropdown_block">
+													<div class="menu__dropdown_head">
+														<button type="button" class="menu__dropdown_back"></button>
+														<h6>Портфолио</h6>
+													</div>
+
+													<div class="menu__dropdown_body">
+														<div class="menu__wrap">
+															<ul>
+																<li class="menu-item"><a href="#">Коммерческая
+																		недвижимость</a>
+																</li>
+																<li class="menu-item"><a href="#">Жильё</a></li>
+															</ul>
+														</div>
+
+														<div class="menu__wrap menu__contact">
+															<h6>Свяжитесь с нами</h6>
+															<ul>
+																<li class="menu-item">
+																	<a href="tel:74957774250">+7 495 777-42-50</a>
+																</li>
+																<li class="menu-item">
+																	<a
+																		href="mailto:info@kladov-мск.ru">info@kladov-мск.ru</a>
+																</li>
+															</ul>
+														</div>
+
+														<div class="menu__wrap">
+															<h6>Соцсети</h6>
+															<ul>
+																<li class="menu-item"><a href="#">Вконтакте</a></li>
+																<li class="menu-item"><a href="#">Youtube</a></li>
+																<li class="menu-item"><a href="#">WhatsApp</a></li>
+																<li class="menu-item"><a href="#">Telegram</a></li>
+															</ul>
+														</div>
+													</div>
+
+													<div class="rs-header__btn">
+														<a href="#" class="rs-btn _btn-primary">Оставить заявку</a>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+
+							<div class="rs-header__menu menu">
+								<nav class="menu__body">
+									<ul class="menu__list menu__contact">
+										<li class="menu-item"><a href="tel:74957774250">+7 495 777-42-50</a></li>
+									</ul>
+								</nav>
+							</div>
+
+							<div class="rs-header__btn">
+								<a href="#" class="rs-btn _btn-primary">Оставить заявку</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="rs-header__burger">
+					<div class="rs-header__burger_block">
+						<div class="rs-header__burger_menu">
+							<button type="button" class="rs-header__burger_close icon-menu">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path d="M1 1L15 15M15 1L1 15" stroke="black" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+							</button>
+
+							<div class="rs-header__burger_body">
+								<div class="rs-header__menu menu">
+									<h6>Меню</h6>
+									<nav class="menu__body">
+										<ul>
+											<li class="menu-item"><a href="#">О компании</a></li>
+											<li class="menu-item"><a href="#">Услуги</a></li>
+											<li class="menu-item"><a href="#">Производство</a></li>
+											<li class="menu-item"><a href="#">Коммерческая недвижимость</a></li>
+											<li class="menu-item"><a href="#">Частное жильё</a></li>
+											<li class="menu-item"><a href="#">Отзывы</a></li>
+											<li class="menu-item"><a href="#">Контакты</a></li>
+										</ul>
+									</nav>
+								</div>
+
+								<div class="rs-header__contact">
+									<div class="rs-header__contact_item">
+										<h6>Контакты</h6>
+										<ul>
+											<li class="menu-item"><a href="tel:74957774250">+7 495 777-42-50</a></li>
+											<li class="menu-item"><a
+													href="mailto:info@kladov-мск.ru">info@kladov-мск.ru</a>
+											</li>
+											<li class="menu-item">Пн-Пт: с 10:00 до 18:00</li>
+										</ul>
+									</div>
+
+									<div class="rs-header__contact_item">
+										<h6>Адрес</h6>
+										<ul>
+											<li class="menu-item">109052, г. Москва, вн.тёр. г. м.о. Нижегородский,
+												пр-кт
+												Рязанский, д. ЗБ, этаж 3,офис 325</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="rs-header__social">
+									<ul>
+										<li class="menu-item"><a href="#">Вконтакте</a></li>
+										<li class="menu-item"><a href="#">Youtube</a></li>
+										<li class="menu-item"><a href="#">Telegram</a></li>
+										<li class="menu-item"><a href="#">WhatsApp</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="rs-header__burger_imgs">
+							<img src="./img/blocks/burger-menu/burger_img-1.jpg" alt="">
+							<img src="./img/blocks/burger-menu/burger_img-2.jpg" alt="">
+							<img src="./img/blocks/burger-menu/burger_img-3.jpg" alt="">
+							<img src="./img/blocks/burger-menu/burger_img-4.jpg" alt="">
+							<img src="./img/blocks/burger-menu/burger_img-5.jpg" alt="">
+							<img src="./img/blocks/burger-menu/burger_img-6.jpg" alt="">
+							<img src="./img/blocks/burger-menu/burger_img-7.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<div class="rs-breadcrumbs">
+				<div class="rs-breadcrumbs__container">
+					<nav class="rs-breadcrumbs__navigation">
+						<ul itemscope itemtype="http://schema.org/BreadcrumbList" class="rs-breadcrumbs__list">
+							<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope
+								itemtype="http://schema.org/ListItem">
+								<a class="rs-breadcrumbs__link" href="home.html" itemprop="item" typeof="WebPage">
+									<span itemprop="name">Главная</span>
+								</a>
+								<meta itemprop="position" content="1">
+							</li>
+							<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope=""
+								itemtype="http://schema.org/ListItem">
+								<span itemprop="name">Мебель для дома</span>
+								<meta itemprop="position" content="2">
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<link rel="stylesheet" href="css/rs-slider.css">
+			<section class="rs-slider">
+				<div class="rs-slider__container">
+					<div class="rs-slider__content _center">
+						<div class="rs-slider__body">
+							<div class="section-header" data-aos="fade-up" data-aos-delay="100">
+								<div class="section-header__title">
+									<h6 class="anc-14-medium">Мебель для дома на заказ</h6>
+									<h2 class="anc-70-thin">Идеальное решение для вашего дома — мебель, созданная
+										специально для вас</h2>
+								</div>
+							</div>
+
+							<a href="#" class="rs-slider__btn">
+								<span>
+									<svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+										<path d="M0.5 4L6.5 9L12.5 4" stroke="white" />
+									</svg>
+									<span>Подробнее</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="rs-slider__slider swiper" data-aos="fade" data-aos-delay="100">
+					<div class="rs-slider__swiper swiper-wrapper">
+						<div class="rs-slider__slide swiper-slide">
+							<div class="rs-slider__bg">
+								<img class="rs-slider__bg--desk" src="./img/blocks/slider/slider_img-4.jpg" alt="">
+								<img class="rs-slider__bg--mob" src="./img/blocks/slider/slider_img-4--mob.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-services.css">
+			<section class="rs-services">
+				<div class="rs-services__container">
+					<div class="section-header" data-aos="fade-up" data-aos-delay="100">
+						<div class="section-header__title">
+							<h6 class="anc-14-medium">Фотогалерея</h6>
+							<h2 class="anc-55-thin">Эстетика, соответствующая вашему вкусу</h2>
+						</div>
+					</div>
+
+					<div class="rs-services__block" data-aos="fade-left" data-aos-delay="200">
+						<div class="rs-services__wrapper">
+							<div class="rs-services__cursor">
+								<div class="rs-services__button-next swiper-button-next">
+									<div class="rs-services__button-desk">
+										<span>Пролистать</span>
+										<svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M4 13L9 7L4 1" stroke="white" />
+										</svg>
+									</div>
+									<div class="rs-services__button-mob">
+										<svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M21.1667 10.5256C20.8267 10.5251 20.4945 10.6285 20.2138 10.8221C20.1495 10.5563 20.0235 10.3098 19.8462 10.1029C19.6688 9.89593 19.4452 9.73455 19.1939 9.63208C18.9425 9.5296 18.6706 9.48895 18.4006 9.5135C18.1306 9.53805 17.8703 9.62709 17.6411 9.77326C17.6043 9.48702 17.4971 9.21464 17.3291 8.98105C17.1611 8.74745 16.9377 8.5601 16.6795 8.43612C16.4212 8.31214 16.1362 8.2555 15.8507 8.27137C15.5651 8.28724 15.2881 8.37512 15.0448 8.52696V5.84609C15.0448 5.39228 14.8662 4.95706 14.5483 4.63617C14.2303 4.31528 13.7991 4.13501 13.3494 4.13501C12.8998 4.13501 12.4685 4.31528 12.1506 4.63617C11.8326 4.95706 11.654 5.39228 11.654 5.84609V10.5554C11.3379 10.5547 11.0248 10.617 10.7326 10.7386C10.4404 10.8601 10.1747 11.0386 9.95092 11.2639C9.72709 11.4891 9.54944 11.7566 9.42813 12.0512C9.30682 12.3458 9.24421 12.6616 9.24391 12.9806V13.9926C9.23195 15.0328 9.43571 16.0639 9.84211 17.0199C10.1799 18.1005 10.601 19.4451 11.729 20.1971C12.1964 20.5713 12.7726 20.9185 12.762 21.5869L12.7604 24.171C12.7604 24.2762 12.8018 24.377 12.8755 24.4513C12.9491 24.5257 13.049 24.5674 13.1532 24.5674H20.096C20.2001 24.5674 20.3 24.5257 20.3737 24.4513C20.4473 24.377 20.4887 24.2762 20.4887 24.171V22.0523C20.4864 21.7786 20.5758 21.5122 20.7425 21.2963C22.0469 19.6579 22.7915 17.6378 22.865 15.5374V12.2365C22.8622 11.783 22.6823 11.3489 22.3642 11.0286C22.0461 10.7082 21.616 10.5275 21.1667 10.5256ZM21.3599 18.7411C21.0437 19.4801 20.63 20.1727 20.1301 20.8C19.8518 21.157 19.7015 21.5985 19.7036 22.0527L19.7032 23.7746H13.5472V21.5869C13.5684 20.6446 12.8802 20.0591 12.1772 19.5462C11.2659 18.9385 10.9077 17.7925 10.588 16.7714C10.2086 15.8956 10.0182 14.9483 10.0295 13.9926V12.9806C10.0299 12.5479 10.2004 12.133 10.5035 11.827C10.8067 11.5211 11.2178 11.349 11.6465 11.3486L11.654 13.6969C11.654 13.802 11.6954 13.9028 11.769 13.9772C11.8427 14.0515 11.9426 14.0933 12.0468 14.0933C12.1509 14.0933 12.2508 14.0515 12.3245 13.9772C12.3982 13.9028 12.4395 13.802 12.4395 13.6969V5.84609C12.4395 5.6026 12.5354 5.36908 12.706 5.19691C12.8766 5.02474 13.108 4.92802 13.3492 4.92802C13.5905 4.92802 13.8219 5.02474 13.9924 5.19691C14.163 5.36908 14.2589 5.6026 14.2589 5.84609V9.9334C14.2502 9.96789 14.2648 13.6192 14.2589 13.6564C14.2587 13.7616 14.3 13.8625 14.3735 13.9369C14.4471 14.0114 14.5469 14.0533 14.6511 14.0534C14.7552 14.0536 14.8552 14.012 14.929 13.9377C15.0028 13.8635 15.0443 13.7628 15.0444 13.6576V9.94332C15.054 9.70355 15.1559 9.47702 15.3286 9.31205C15.5013 9.14708 15.731 9.05672 15.9687 9.06024C16.2064 9.06375 16.4334 9.16087 16.6012 9.33088C16.769 9.50088 16.8644 9.73032 16.8669 9.97027V13.6564C16.8669 13.7616 16.9083 13.8624 16.982 13.9367C17.0556 14.0111 17.1555 14.0528 17.2597 14.0528C17.3639 14.0528 17.4638 14.0111 17.5374 13.9367C17.6111 13.8624 17.6525 13.7616 17.6525 13.6564V11.2086C17.6574 10.9685 17.7554 10.7399 17.9254 10.5718C18.0955 10.4038 18.324 10.3096 18.562 10.3096C18.7999 10.3096 19.0285 10.4038 19.1985 10.5718C19.3685 10.7399 19.4665 10.9685 19.4714 11.2086V13.656C19.4714 13.7612 19.5128 13.862 19.5865 13.9363C19.6601 14.0107 19.76 14.0524 19.8642 14.0524C19.9684 14.0524 20.0683 14.0107 20.1419 13.9363C20.2156 13.862 20.257 13.7612 20.257 13.656V12.2361C20.2599 12.0555 20.3151 11.8796 20.4158 11.7303C20.5165 11.5809 20.6583 11.4645 20.8238 11.3955C20.9892 11.3265 21.1711 11.3079 21.3469 11.342C21.5227 11.376 21.6848 11.4613 21.8132 11.5872C21.898 11.6722 21.9653 11.7733 22.0111 11.8847C22.057 11.996 22.0805 12.1155 22.0803 12.2361V15.5215C22.0396 16.6302 21.7953 17.7216 21.3599 18.7403V18.7411Z"
+												fill="white" />
+											<path
+												d="M4.25205 6.43816L6.00155 8.26818C6.07733 8.34739 6.18009 8.39187 6.28722 8.39183C6.39435 8.39179 6.49708 8.34724 6.5728 8.26797C6.64853 8.1887 6.69105 8.08122 6.69101 7.96915C6.69097 7.85709 6.64838 7.74964 6.5726 7.67043L5.51248 6.56151H9.92782C9.94451 6.74789 9.97503 6.93264 10.0191 7.11407C10.0464 7.22241 10.1137 7.31497 10.2063 7.37137C10.2988 7.42778 10.409 7.44342 10.5126 7.41485C10.6162 7.38628 10.7047 7.31584 10.7586 7.21903C10.8125 7.12222 10.8275 7.00696 10.8001 6.89862C10.697 6.46862 10.689 6.01964 10.7769 5.58594C10.8648 5.15224 11.0463 4.74525 11.3074 4.39602C11.5685 4.04679 11.9023 3.76454 12.2835 3.57077C12.6648 3.37701 13.0832 3.27686 13.5071 3.27795C13.9309 3.27905 14.3489 3.38136 14.7292 3.57709C15.1095 3.77282 15.442 4.0568 15.7015 4.40737C15.9609 4.75795 16.1404 5.16586 16.2263 5.60002C16.3121 6.03417 16.3021 6.48309 16.1969 6.91256C16.1807 6.97526 16.1784 7.04102 16.1904 7.10476C16.2023 7.1685 16.2281 7.22852 16.2657 7.2802C16.3033 7.33187 16.3518 7.37382 16.4073 7.4028C16.4629 7.43179 16.5241 7.44704 16.5862 7.44738C17.0163 7.44315 17.03 6.90242 17.072 6.56151H21.4878L20.4276 7.67043C20.3541 7.7501 20.3134 7.85681 20.3143 7.96757C20.3152 8.07834 20.3577 8.18429 20.4326 8.26261C20.5074 8.34094 20.6087 8.38537 20.7146 8.38633C20.8205 8.38729 20.9225 8.34471 20.9987 8.26776L22.7482 6.43816C22.823 6.35839 22.865 6.25107 22.865 6.13928C22.865 6.0275 22.823 5.92018 22.7482 5.8404L20.9987 4.01038C20.9229 3.93117 20.8202 3.88669 20.713 3.88673C20.6059 3.88677 20.5032 3.93133 20.4274 4.01059C20.3517 4.08986 20.3092 4.19735 20.3092 4.30941C20.3093 4.42147 20.3519 4.52893 20.4276 4.60814L21.4878 5.71705H17.0631C16.9532 4.80971 16.5307 3.97545 15.8748 3.37073C15.2188 2.76602 14.3745 2.43237 13.5001 2.43237C12.6258 2.43237 11.7814 2.76602 11.1255 3.37073C10.4695 3.97545 10.047 4.80971 9.93711 5.71705H5.51248L6.5726 4.60814C6.64617 4.52847 6.68687 4.42175 6.68595 4.31099C6.68503 4.20023 6.64256 4.09427 6.56768 4.01595C6.4928 3.93763 6.39151 3.8932 6.28562 3.89224C6.17973 3.89127 6.07772 3.93385 6.00155 4.0108L4.25205 5.8404C4.17719 5.92018 4.13525 6.0275 4.13525 6.13928C4.13525 6.25107 4.17719 6.35839 4.25205 6.43816Z"
+												fill="white" />
+										</svg>
+									</div>
+								</div>
+							</div>
+
+							<div class="rs-services__slider swiper">
+								<div class="rs-services__swiper swiper-wrapper">
+									<div class="rs-services__slide swiper-slide">
+										<div class="rs-services__item">
+											<a href="./img/blocks/services/services_img-6.jpg" class="rs-services__link"
+												data-fancybox="gallery">
+												<div class="rs-services__img">
+													<img src="./img/blocks/services/services_img-6.jpg" alt="">
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="rs-services__slide swiper-slide">
+										<div class="rs-services__item">
+											<a href="./img/blocks/services/services_img-7.jpg" class="rs-services__link"
+												data-fancybox="gallery">
+												<div class="rs-services__img">
+													<img src="./img/blocks/services/services_img-7.jpg" alt="">
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="rs-services__slide swiper-slide">
+										<div class="rs-services__item">
+											<a href="./img/blocks/services/services_img-8.jpg" class="rs-services__link"
+												data-fancybox="gallery">
+												<div class="rs-services__img">
+													<img src="./img/blocks/services/services_img-8.jpg" alt="">
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="rs-services__slide swiper-slide">
+										<div class="rs-services__item">
+											<a href="./img/blocks/services/services_img-9.jpg" class="rs-services__link"
+												data-fancybox="gallery">
+												<div class="rs-services__img">
+													<img src="./img/blocks/services/services_img-9.jpg" alt="">
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="rs-services__slide swiper-slide">
+										<div class="rs-services__item">
+											<a href="./img/blocks/services/services_img-10.jpg"
+												class="rs-services__link" data-fancybox="gallery">
+												<div class="rs-services__img">
+													<img src="./img/blocks/services/services_img-10.jpg" alt="">
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="rs-services__slide swiper-slide">
+										<div class="rs-services__item">
+											<a href="./img/blocks/services/services_img-11.jpg"
+												class="rs-services__link" data-fancybox="gallery">
+												<div class="rs-services__img">
+													<img src="./img/blocks/services/services_img-11.jpg" alt="">
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="rs-services__slide swiper-slide">
+										<div class="rs-services__item">
+											<a href="./img/blocks/services/services_img-12.jpg"
+												class="rs-services__link" data-fancybox="gallery">
+												<div class="rs-services__img">
+													<img src="./img/blocks/services/services_img-12.jpg" alt="">
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="rs-services__slide swiper-slide">
+										<div class="rs-services__item">
+											<a href="./img/blocks/services/services_img-13.jpg"
+												class="rs-services__link" data-fancybox="gallery">
+												<div class="rs-services__img">
+													<img src="./img/blocks/services/services_img-13.jpg" alt="">
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="rs-services__slide swiper-slide">
+										<div class="rs-services__item">
+											<a href="./img/blocks/services/services_img-14.jpg"
+												class="rs-services__link" data-fancybox="gallery">
+												<div class="rs-services__img">
+													<img src="./img/blocks/services/services_img-14.jpg" alt="">
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-text-block.css">
+			<section class="rs-text-block">
+				<div class="rs-text-block__container">
+					<div class="rs-text-block__wrapper">
+						<div class="rs-text-block__picture" data-aos="fade-up" data-aos-delay="200">
+							<div class="rs-text-block__img">
+								<img src="./img/blocks/text-block/text-block_img-6.jpg" alt="">
+							</div>
+						</div>
+						<div class="rs-text-block__desc" data-aos="fade-up" data-aos-delay="100">
+							<div class="section-header" data-aos="fade-up" data-aos-delay="100">
+								<div class="section-header__title">
+									<h6 class="anc-14-medium">Услуги</h6>
+									<h3 class="anc-40-thin">Создаём уникальную мебель с учётом ваших пожеланий
+										и особенностей помещения</h3>
+								</div>
+							</div>
+							<div class="rs-text-block__desc_body">
+								<p>Изготавливаем мебель для дома на заказ, предлагая широкий выбор различных стилей
+									и дизайна. Мы создаём уникальную мебель и предметы интерьеры, полностью
+									соответствующие индивидуальным требованиям заказчика.
+								</p>
+								<p>Наши опытные мастера готовы воплотить в реальность самые смелые идеи и создать
+									неповторимую атмосферу уюта и комфорта в вашем доме. С нами вы можете создать
+									домашнюю обстановку, которая будет отражать ваш уникальный стиль и внимание
+									к деталям.
+								</p>
+								<p>Обращаясь к нам, вы получаете не просто мебель, а часть вашего интерьера, над которой
+									работала команда профессионалов с заботой о каждой детали. Создавайте уют и комфорт
+									в своём доме с нашей мебелью на заказ!
+								</p>
+							</div>
+							<a href="#" class="rs-btn _btn-primary">Отправить проект на расчёт</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-slider-block.css">
+			<section class="rs-slider-block">
+				<div class="rs-slider-block__container">
+					<div class="section-header" data-aos="fade-up" data-aos-delay="100">
+						<div class="section-header__title">
+							<h6 class="anc-14-medium">Для вдохновения</h6>
+							<h3 class="anc-55-thin">Персонализированные решения для дома, соответствующие вашим желаниям
+							</h3>
+						</div>
+					</div>
+
+					<div class="rs-slider-block__slider swiper" data-aos="fade-up" data-aos-delay="200">
+						<div class="rs-slider-block__swiper swiper-wrapper">
+							<div class="rs-slider-block__slide swiper-slide">
+								<div class="rs-slider-block__item">
+									<a href="#" class="rs-slider-block__link">
+										<div class="rs-slider-block__img">
+											<img src="./img/blocks/slider-block/slider-block_img-2.jpg" alt="">
+										</div>
+										<div class="rs-slider-block__desc">
+											<h4 class="anc-24-medium">Мебель из массива</h4>
+											<p class="anc-19-light">Элегантные столы, стулья и комоды из натурального
+												дерева для долговечности и красоты интерьера</p>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-slider-block__slide swiper-slide">
+								<div class="rs-slider-block__item">
+									<a href="#" class="rs-slider-block__link">
+										<div class="rs-slider-block__img">
+											<img src="./img/blocks/slider-block/slider-block_img-1.jpg" alt="">
+										</div>
+										<div class="rs-slider-block__desc">
+											<h4 class="anc-24-medium">Спальни</h4>
+											<p class="anc-19-light">Уникальные кровати, шкафы и тумбочки для создания
+												уютной атмосферы и комфортного сна</p>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-slider-block__slide swiper-slide">
+								<div class="rs-slider-block__item">
+									<a href="#" class="rs-slider-block__link">
+										<div class="rs-slider-block__img">
+											<img src="./img/blocks/slider-block/slider-block_img-3.jpg" alt="">
+										</div>
+										<div class="rs-slider-block__desc">
+											<h4 class="anc-24-medium">Гостиные</h4>
+											<p class="anc-19-light">Стулья, диваны, столы — идеальная мебель для приёма
+												гостей и отдыха в уютной обстановке</p>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-slider-block__slide swiper-slide">
+								<div class="rs-slider-block__item">
+									<a href="#" class="rs-slider-block__link">
+										<div class="rs-slider-block__img">
+											<img src="./img/blocks/slider-block/slider-block_img-4.jpg" alt="">
+										</div>
+										<div class="rs-slider-block__desc">
+											<h4 class="anc-24-medium">Гардеробные</h4>
+											<p class="anc-19-light">Организуйте своё пространство с помощью шкафов,
+												полок и вешалок для хранения одежды и аксессуаров</p>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-slider-block__slide swiper-slide">
+								<div class="rs-slider-block__item">
+									<a href="#" class="rs-slider-block__link">
+										<div class="rs-slider-block__img">
+											<img src="./img/blocks/slider-block/slider-block_img-5.jpg" alt="">
+										</div>
+										<div class="rs-slider-block__desc">
+											<h4 class="anc-24-medium">Кухонная мебель</h4>
+											<p class="anc-19-light">Функциональные столешницы, шкафы и стулья создадут
+												стиль и комфорт на вашей кухне</p>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="rs-slider-block__slide swiper-slide">
+								<div class="rs-slider-block__item">
+									<a href="#" class="rs-slider-block__link">
+										<div class="rs-slider-block__img">
+											<img src="./img/blocks/slider-block/slider-block_img-6.jpg" alt="">
+										</div>
+										<div class="rs-slider-block__desc">
+											<h4 class="anc-24-medium">Мебель для ванной комнаты</h4>
+											<p class="anc-19-light">Стильные и практичные шкафы, полки и зеркала
+												для удобства и уюта в ванной комнате</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="rs-slider-block__action swiper-action">
+							<div class="rs-slider-block__pagination swiper-pagination"></div>
+							<div class="rs-slider-block__navigation swiper-navigation">
+								<div class="rs-slider-block__button-prev swiper-button-prev">
+									<svg width="21" height="16" viewBox="0 0 21 16" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M20.1699 8.73542L3.82006 8.73542L9.07286 13.97C9.22386 14.1275 9.30707 14.3379 9.30461 14.5561C9.30214 14.7743 9.2142 14.9828 9.05967 15.1368C8.90514 15.2908 8.69636 15.3781 8.47819 15.3799C8.26001 15.3816 8.04985 15.2977 7.89286 15.1462L1.21526 8.49262C1.13781 8.4153 1.07637 8.32348 1.03445 8.22239C0.992525 8.12131 0.970947 8.01295 0.970947 7.90352C0.970947 7.79408 0.992525 7.68573 1.03445 7.58464C1.07637 7.48356 1.13781 7.39173 1.21526 7.31442L7.89246 0.660017C8.04945 0.508504 8.25961 0.424616 8.47779 0.426377C8.69596 0.42814 8.90474 0.51541 9.05927 0.669439C9.2138 0.823469 9.30174 1.03197 9.30421 1.25013C9.30667 1.4683 9.22346 1.67873 9.07246 1.83622L3.82006 7.07162L20.1699 7.07162C20.3905 7.07162 20.6021 7.15926 20.7581 7.31527C20.9141 7.47129 21.0018 7.68288 21.0018 7.90352C21.0018 8.12415 20.9141 8.33575 20.7581 8.49176C20.6021 8.64777 20.3905 8.73542 20.1699 8.73542Z"
+											fill="white" />
+									</svg>
+								</div>
+								<div class="rs-slider-block__button-next swiper-button-next">
+									<svg width="21" height="16" viewBox="0 0 21 16" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.830387 8.73542L17.1802 8.73542L11.9274 13.97C11.7764 14.1275 11.6932 14.3379 11.6956 14.5561C11.6981 14.7743 11.786 14.9828 11.9406 15.1368C12.0951 15.2908 12.3039 15.3781 12.5221 15.3799C12.7402 15.3816 12.9504 15.2977 13.1074 15.1462L19.785 8.49262C19.8624 8.4153 19.9239 8.32348 19.9658 8.22239C20.0077 8.12131 20.0293 8.01295 20.0293 7.90352C20.0293 7.79408 20.0077 7.68573 19.9658 7.58464C19.9239 7.48356 19.8624 7.39173 19.785 7.31442L13.1078 0.660017C12.9508 0.508504 12.7406 0.424616 12.5225 0.426377C12.3043 0.42814 12.0955 0.51541 11.941 0.669439C11.7864 0.823469 11.6985 1.03197 11.696 1.25013C11.6936 1.4683 11.7768 1.67873 11.9278 1.83622L17.1802 7.07162L0.830387 7.07162C0.609755 7.07162 0.398157 7.15926 0.242146 7.31527C0.086134 7.47129 -0.00151253 7.68288 -0.00151253 7.90352C-0.00151253 8.12415 0.086134 8.33575 0.242146 8.49176C0.398157 8.64777 0.609755 8.73542 0.830387 8.73542Z"
+											fill="white" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-features.css">
+			<section class="rs-features">
+				<div class="rs-features__container">
+					<div class="section-header" data-aos="fade-up" data-aos-delay="100">
+						<div class="section-header__title">
+							<h6 class="anc-14-medium">Наши преимущества</h6>
+							<h2 class="anc-55-thin">Надёжность, качество <br> и профессионализм!</h2>
+						</div>
+					</div>
+
+					<div class="rs-features__wrapper">
+						<div class="rs-features__list">
+							<div class="rs-features__item" data-aos="fade-up" data-aos-delay="100">
+								<div class="rs-features__icon">
+									<img src="./img/blocks/features/features_icon-1.svg" alt="">
+								</div>
+								<div class="rs-features__desc">
+									<h4 class="anc-24-medium">Высокая репутация</h4>
+									<p class="anc-19-light">Сотрудничаем с ключевыми государственными организациями,
+										такими как Министерство обороны и Администрация президента</p>
+								</div>
+							</div>
+
+							<div class="rs-features__item" data-aos="fade-up" data-aos-delay="150">
+								<div class="rs-features__icon">
+									<img src="./img/blocks/features/features_icon-4.svg" alt="">
+								</div>
+								<div class="rs-features__desc">
+									<h4 class="anc-24-medium">Соблюдение сроков</h4>
+									<p class="anc-19-light">Благодаря собственному производству и современному
+										оборудованию гарантируем соблюдение сроков выполнения заказов</p>
+								</div>
+							</div>
+
+							<div class="rs-features__item" data-aos="fade-up" data-aos-delay="200">
+								<div class="rs-features__icon">
+									<img src="./img/blocks/features/features_icon-2.svg" alt="">
+								</div>
+								<div class="rs-features__desc">
+									<h4 class="anc-24-medium">Команда профессионалов</h4>
+									<p class="anc-19-light">Команда KLADOV — это высококвалифицированные специалисты,
+										благодаря которым каждый этап работы становится безупречным. Глубокие знания
+										и опыт позволяют нам достигать высоких результатов в каждом проекте</p>
+								</div>
+							</div>
+
+							<div class="rs-features__item" data-aos="fade-up" data-aos-delay="250">
+								<div class="rs-features__icon">
+									<img src="./img/blocks/features/features_icon-5.svg" alt="">
+								</div>
+								<div class="rs-features__desc">
+									<h4 class="anc-24-medium">Сотрудничество</h4>
+									<p class="anc-19-light">Мы ценим доверие наших партнёров. Обеспечиваем надёжность
+										и ответственный подход к деловым отношениям, для нас партнёрские отношения имеют
+										важное значение</p>
+								</div>
+							</div>
+
+							<div class="rs-features__item" data-aos="fade-up" data-aos-delay="300">
+								<div class="rs-features__icon">
+									<img src="./img/blocks/features/features_icon-3.svg" alt="">
+								</div>
+								<div class="rs-features__desc">
+									<h4 class="anc-24-medium">Превосходное качество</h4>
+									<p class="anc-19-light">Гарантируем высокоекачество продукции за счёт контроля
+										качества на всех этапах производства</p>
+								</div>
+							</div>
+
+							<div class="rs-features__item" data-aos="fade-up" data-aos-delay="350">
+								<div class="rs-features__icon">
+									<img src="./img/blocks/features/features_icon-6.svg" alt="">
+								</div>
+								<div class="rs-features__desc">
+									<h4 class="anc-24-medium">Гибкая форма оплаты</h4>
+									<p class="anc-19-light">Прилагаем различные варианты оплаты, чтобы обеспечить
+										комфортные условия сотрудничества</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-steps.css">
+			<script src="js/rs-steps.js" defer></script>
+			<section class="rs-steps">
+				<div class="rs-steps__container">
+					<div class="rs-steps__wrapper">
+						<div class="rs-steps__desc" data-aos="fade-up" data-aos-delay="100">
+							<div class="section-header" data-aos="fade-up" data-aos-delay="100">
+								<div class="section-header__title">
+									<h6 class="anc-14-medium">Как мы работаем</h6>
+									<h2 class="anc-40-thin">Наши методы работы: качество на каждом этапе</h2>
+								</div>
+							</div>
+							<div data-spollers data-one-spoller class="rs-steps__spollers">
+								<div class="rs-steps__spollers_item">
+									<button type="button" data-spoller
+										class="rs-steps__spollers_title anc-24-medium _spoller-active">
+										<span class="rs-steps__spollers_number">1</span>
+										<span class="rs-steps__spollers_content">Замеры и оценка</span>
+									</button>
+									<div class="rs-steps__spollers_body">
+										<div class="rs-steps__spollers_text">
+											<p>Замеры помещения и функциональная оценка пространства</p>
+										</div>
+										<div class="rs-steps__img">
+											<img src="./img/blocks/steps/steps_img-1.jpg" alt="">
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-steps__spollers_item">
+									<button type="button" data-spoller class="rs-steps__spollers_title anc-24-medium">
+										<span class="rs-steps__spollers_number">2</span>
+										<span class="rs-steps__spollers_content">Конструирование</span>
+									</button>
+									<div class="rs-steps__spollers_body">
+										<div class="rs-steps__spollers_text">
+											<p>При разработке проекта мебели все детали согласовываются, а макет
+												утверждается заказчиком </p>
+										</div>
+										<div class="rs-steps__img">
+											<img src="./img/blocks/steps/steps_img-2.jpg" alt="">
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-steps__spollers_item">
+									<button type="button" data-spoller class="rs-steps__spollers_title anc-24-medium">
+										<span class="rs-steps__spollers_number">3</span>
+										<span class="rs-steps__spollers_content">Изготовление</span>
+									</button>
+									<div class="rs-steps__spollers_body">
+										<div class="rs-steps__spollers_text">
+											<p>Изготовление вашего уникального изделия на фабрике</p>
+										</div>
+										<div class="rs-steps__img">
+											<img src="./img/blocks/steps/steps_img-3.jpg" alt="">
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-steps__spollers_item">
+									<button type="button" data-spoller class="rs-steps__spollers_title anc-24-medium">
+										<span class="rs-steps__spollers_number">4</span>
+										<span class="rs-steps__spollers_content">Доставка</span>
+									</button>
+									<div class="rs-steps__spollers_body">
+										<div class="rs-steps__spollers_text">
+											<p>Доставка мебели в удобное для заказчика время</p>
+										</div>
+										<div class="rs-steps__img">
+											<img src="./img/blocks/steps/steps_img-4.jpg" alt="">
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-steps__spollers_item">
+									<button type="button" data-spoller class="rs-steps__spollers_title anc-24-medium">
+										<span class="rs-steps__spollers_number">5</span>
+										<span class="rs-steps__spollers_content">Сборка</span>
+									</button>
+									<div class="rs-steps__spollers_body">
+										<div class="rs-steps__spollers_text">
+											<p>Мастера компании выполняют сборку качественно и оперативно</p>
+										</div>
+										<div class="rs-steps__img">
+											<img src="./img/blocks/steps/steps_img-5.jpg" alt="">
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-steps__spollers_item">
+									<button type="button" data-spoller class="rs-steps__spollers_title anc-24-medium">
+										<span class="rs-steps__spollers_number">6</span>
+										<span class="rs-steps__spollers_content">Гарантия</span>
+									</button>
+									<div class="rs-steps__spollers_body">
+										<div class="rs-steps__spollers_text">
+											<p>Мастера компании выполняют сборку качественно и оперативно</p>
+										</div>
+										<div class="rs-steps__img">
+											<img src="./img/blocks/steps/steps_img-6.jpg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="rs-steps__picture" data-aos="fade-up" data-aos-delay="200">
+							<div class="rs-steps__img _spoller-active">
+								<img src="./img/blocks/steps/steps_img-1.jpg" alt="">
+							</div>
+							<div class="rs-steps__img">
+								<img src="./img/blocks/steps/steps_img-2.jpg" alt="">
+							</div>
+							<div class="rs-steps__img">
+								<img src="./img/blocks/steps/steps_img-3.jpg" alt="">
+							</div>
+							<div class="rs-steps__img">
+								<img src="./img/blocks/steps/steps_img-4.jpg" alt="">
+							</div>
+							<div class="rs-steps__img">
+								<img src="./img/blocks/steps/steps_img-5.jpg" alt="">
+							</div>
+							<div class="rs-steps__img">
+								<img src="./img/blocks/steps/steps_img-6.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-logo.css">
+			<section class="rs-logo">
+				<div class="rs-logo__container">
+					<div class="section-header" data-aos="fade-up" data-aos-delay="100">
+						<div class="section-header__title">
+							<h6 class="anc-14-medium">Наши парнеры</h6>
+							<h2 class="anc-55-thin">Сотрудничаем с надёжными и проверенными компаниями</h2>
+						</div>
+					</div>
+					<div class="rs-logo__slider swiper" data-aos="fade-up" data-aos-delay="200">
+						<div class="rs-logo__swiper swiper-wrapper">
+							<div class="rs-logo__slide swiper-slide">
+								<div class="rs-logo__item">
+									<div class="rs-logo__img">
+										<img src="./img/blocks/logo/logo_img-7.png" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="rs-logo__slide swiper-slide">
+								<div class="rs-logo__item">
+									<div class="rs-logo__img">
+										<img src="./img/blocks/logo/logo_img-8.png" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="rs-logo__slide swiper-slide">
+								<div class="rs-logo__item">
+									<div class="rs-logo__img">
+										<img src="./img/blocks/logo/logo_img-9.png" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="rs-logo__slide swiper-slide">
+								<div class="rs-logo__item">
+									<div class="rs-logo__img">
+										<img src="./img/blocks/logo/logo_img-10.png" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="rs-logo__slide swiper-slide">
+								<div class="rs-logo__item">
+									<div class="rs-logo__img">
+										<img src="./img/blocks/logo/logo_img-11.png" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="rs-logo__slide swiper-slide">
+								<div class="rs-logo__item">
+									<div class="rs-logo__img">
+										<img src="./img/blocks/logo/logo_img-12.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="rs-logo__action swiper-action">
+							<div class="rs-logo__pagination swiper-pagination"></div>
+							<div class="rs-logo__navigation swiper-navigation">
+								<div class="rs-logo__button-prev swiper-button-prev">
+									<svg width="21" height="16" viewBox="0 0 21 16" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M20.1699 8.73542L3.82006 8.73542L9.07286 13.97C9.22386 14.1275 9.30707 14.3379 9.30461 14.5561C9.30214 14.7743 9.2142 14.9828 9.05967 15.1368C8.90514 15.2908 8.69636 15.3781 8.47819 15.3799C8.26001 15.3816 8.04985 15.2977 7.89286 15.1462L1.21526 8.49262C1.13781 8.4153 1.07637 8.32348 1.03445 8.22239C0.992525 8.12131 0.970947 8.01295 0.970947 7.90352C0.970947 7.79408 0.992525 7.68573 1.03445 7.58464C1.07637 7.48356 1.13781 7.39173 1.21526 7.31442L7.89246 0.660017C8.04945 0.508504 8.25961 0.424616 8.47779 0.426377C8.69596 0.42814 8.90474 0.51541 9.05927 0.669439C9.2138 0.823469 9.30174 1.03197 9.30421 1.25013C9.30667 1.4683 9.22346 1.67873 9.07246 1.83622L3.82006 7.07162L20.1699 7.07162C20.3905 7.07162 20.6021 7.15926 20.7581 7.31527C20.9141 7.47129 21.0018 7.68288 21.0018 7.90352C21.0018 8.12415 20.9141 8.33575 20.7581 8.49176C20.6021 8.64777 20.3905 8.73542 20.1699 8.73542Z"
+											fill="white" />
+									</svg>
+								</div>
+								<div class="rs-logo__button-next swiper-button-next">
+									<svg width="21" height="16" viewBox="0 0 21 16" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.830387 8.73542L17.1802 8.73542L11.9274 13.97C11.7764 14.1275 11.6932 14.3379 11.6956 14.5561C11.6981 14.7743 11.786 14.9828 11.9406 15.1368C12.0951 15.2908 12.3039 15.3781 12.5221 15.3799C12.7402 15.3816 12.9504 15.2977 13.1074 15.1462L19.785 8.49262C19.8624 8.4153 19.9239 8.32348 19.9658 8.22239C20.0077 8.12131 20.0293 8.01295 20.0293 7.90352C20.0293 7.79408 20.0077 7.68573 19.9658 7.58464C19.9239 7.48356 19.8624 7.39173 19.785 7.31442L13.1078 0.660017C12.9508 0.508504 12.7406 0.424616 12.5225 0.426377C12.3043 0.42814 12.0955 0.51541 11.941 0.669439C11.7864 0.823469 11.6985 1.03197 11.696 1.25013C11.6936 1.4683 11.7768 1.67873 11.9278 1.83622L17.1802 7.07162L0.830387 7.07162C0.609755 7.07162 0.398157 7.15926 0.242146 7.31527C0.086134 7.47129 -0.00151253 7.68288 -0.00151253 7.90352C-0.00151253 8.12415 0.086134 8.33575 0.242146 8.49176C0.398157 8.64777 0.609755 8.73542 0.830387 8.73542Z"
+											fill="white" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-photo.css">
+			<section class="rs-photo">
+				<div class="rs-photo__container">
+					<div class="rs-photo__wrapper">
+						<div class="rs-photo__list">
+							<div class="rs-photo__item" data-aos="fade-up" data-aos-delay="100">
+								<img src="./img/blocks/photo-block/photo_img-5.jpg" alt="">
+							</div>
+							<div class="rs-photo__item" data-aos="fade-up" data-aos-delay="150">
+								<img src="./img/blocks/photo-block/photo_img-6.jpg" alt="">
+							</div>
+							<div class="rs-photo__item" data-aos="fade-up" data-aos-delay="200">
+								<img src="./img/blocks/photo-block/photo_img-7.jpg" alt="">
+							</div>
+							<div class="rs-photo__item" data-aos="fade-up" data-aos-delay="250">
+								<img src="./img/blocks/photo-block/photo_img-8.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<link rel="stylesheet" href="css/rs-footer.css" />
+		<footer>
+			<div class="rs-footer">
+				<div class="rs-footer__container">
+					<div class="rs-footer__wrapper">
+						<div class="rs-footer__request" data-aos="fade-up" data-aos-delay="100">
+							<div class="section-header" data-aos="fade-up" data-aos-delay="100">
+								<div class="section-header__title">
+									<h6 class="anc-14-medium">свяжитесь с нами</h6>
+									<h2 class="anc-40-thin">Отправить проект на расчёт</h2>
+								</div>
+							</div>
+
+							<div class="rs-footer__form">
+								<form action="#" class="form">
+									<div class="form__wrapper">
+										<div class="form__block">
+											<div class="form__line">
+												<input autocomplete="off" type="text" name="form[]"
+													data-error="Введите свое имя" data-required data-validate required
+													placeholder="Ваше имя" class="rs-input">
+											</div>
+											<div class="form__line">
+												<input autocomplete="off" type="tel" name="form[]"
+													data-error="Введите свой номер телефона" data-required data-validate
+													required placeholder="Телефон" class="rs-input">
+											</div>
+											<div class="form__line">
+												<input autocomplete="off" type="email" name="form[]"
+													data-error="Введите свой email" data-required data-validate required
+													placeholder="Email" class="rs-input">
+											</div>
+											<div class="form__line">
+												<textarea autocomplete="off" name="form[]"
+													placeholder="Введите ваш комментарий" class="rs-input"></textarea>
+											</div>
+											<div class="form__line">
+												<div class="form__upload">
+													<input type="file" class="rs-input-upload filepond" name="filepond"
+														multiple data-allow-reorder="true" data-max-file-size="15MB">
+												</div>
+											</div>
+											<div class="form__footer">
+												<div class="form__agreement">
+													Нажимая на кнопку «Отправить», вы соглашаетесь на обработку
+													персональных данных в соответствии с
+													<a href="#">пользовательским соглашением</a>
+												</div>
+												<div class="form__button">
+													<button type="submit" class="rs-btn _btn-primary">Отправить</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<div class="rs-footer__info">
+							<div class="rs-footer__list" data-aos="fade-up" data-aos-delay="200">
+								<div class="rs-footer__item">
+									<h4 class="anc-24-medium">Контакты</h4>
+									<ul>
+										<li><a href="tel:74957774250">+7 495 777-42-50</a></li>
+										<li><a href="mailto:info@kladov-мск.ru">info@kladov-мск.ru</a></li>
+										<li>Пн-Пт: с 10:00 до 18:00</li>
+									</ul>
+								</div>
+
+								<div class="rs-footer__item">
+									<h4 class="anc-24-medium">Адрес</h4>
+									<ul>
+										<li>109052, г. Москва, вн.тёр. г. м.о. Нижегородский, пр-кт Рязанский, д. ЗБ,
+											этаж 3,офис 325</li>
+									</ul>
+								</div>
+
+								<div class="rs-footer__item">
+									<h4 class="anc-24-medium">Соцсети</h4>
+									<ul>
+										<li><a href="#">Вконтакте</a></li>
+										<li><a href="#">Youtube</a></li>
+										<li><a href="#">Telegram</a></li>
+										<li><a href="#">WhatsApp</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<a href="#" class="rs-footer__scroll">
+								<span>Вернуться к началу</span>
+								<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M13 9L7 4L1 9" stroke="white" />
+								</svg>
+							</a>
+
+							<div class="rs-footer__copyright">
+								© KLADOV 2023. Все права защищены.
+							</div>
+						</div>
+
+						<div class="rs-footer__bottom">
+							<a href="#" class="rs-footer__scroll">
+								<span>Вернуться к началу</span>
+								<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M13 9L7 4L1 9" stroke="white" />
+								</svg>
+							</a>
+
+							<div class="rs-footer__copyright">
+								© KLADOV 2023. Все права защищены.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/rs-sliders-init.js"></script>
+
+	<script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.min.js"></script>
+	<script
+		src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.min.js"></script>
+	<script
+		src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.min.js"></script>
+	<script
+		src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.min.js"></script>
+	<script src="https://unpkg.com/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.min.js"></script>
+	<script src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.min.js"></script>
+	<script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+
+	<script src="js/rs-script.js"></script>
+
+</body>
+
+</html>

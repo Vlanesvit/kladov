@@ -1,0 +1,156 @@
+body::after {
+	content: "";
+	background-color: rgba(7, 7, 7, 0.4);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.8s ease 0s;
+	pointer-events: none;
+	z-index: 1001;
+}
+
+.popup-show body::after {
+	opacity: 1;
+}
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 30px;
+	transition: visibility 0.8s ease 0s;
+	visibility: hidden;
+	pointer-events: none;
+	z-index: 1002;
+}
+
+@media (max-width: 991.98px) {
+	.popup {
+		padding: 30px 10px;
+	}
+}
+
+.popup__close {
+	z-index: 10;
+	width: 24px;
+	height: 24px;
+
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+
+	@media (max-width: 1439.98px) {
+		width: 20px;
+		height: 20px;
+	}
+
+	@media (max-width: 991.98px) {
+		width: 16px;
+		height: 16px;
+	}
+}
+
+.popup-show .popup {
+	visibility: visible;
+	overflow: auto;
+	pointer-events: auto;
+}
+
+.popup-show .popup__content {
+	visibility: visible;
+	transform: scale(1);
+}
+
+.popup__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+	flex: 1 1 auto;
+	width: 100%;
+}
+
+.popup-right .popup__wrapper {
+	align-items: flex-end;
+}
+
+.popup-left .popup__wrapper {
+	align-items: flex-start;
+}
+
+.popup__content {
+	visibility: hidden;
+	transform: scale(0);
+	transition: transform 0.3s ease 0s;
+	background-color: #fff;
+	width: 100%;
+	max-width: 620px;
+	padding: 50px;
+	position: relative;
+
+	@media (max-width: 1439.98px) {
+		padding: 30px;
+	}
+
+	@media (max-width: 991.98px) {
+		padding: 30px 15px;
+	}
+}
+
+.popup__head {
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	h5 {
+		font-family: "Cormorant Garamond", sans-serif;
+		font-weight: 500;
+		font-size: 22px;
+		text-transform: uppercase;
+		color: #774653;
+	}
+}
+
+.popup__body {
+	max-height: calc(100vh - 215px);
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding-right: 20px;
+	scrollbar-width: thin;
+
+	@media (max-width: 1439.98px) {
+		max-height: calc(100vh - 172px);
+	}
+
+	&::-webkit-scrollbar {
+		width: 1px;
+	}
+
+	& > * {
+		&:first-child {
+			margin-top: 0px;
+		}
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+
+	p,
+	ul {
+		margin: 10px 0px;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		margin: 30px 0px;
+	}
+}

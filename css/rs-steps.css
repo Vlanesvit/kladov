@@ -1,0 +1,273 @@
+@media (min-width: 991.98px) {
+  .rs-steps__container {
+    max-width: 1920px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+.rs-steps__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 991.98px) {
+  .rs-steps__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.rs-steps__desc {
+  width: 100%;
+}
+@media (min-width: 991.98px) {
+  .rs-steps__desc {
+    padding: 1% 8.5% 1% 10.3%;
+    max-width: 49.845%;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1559.98px) {
+  .rs-steps__desc {
+    padding: 1% 3%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 991.98px) {
+  .rs-steps__desc .section-header {
+    margin-bottom: 30px;
+  }
+}
+.rs-steps__spollers_item {
+  position: relative;
+  padding-left: 87px;
+}
+@media (max-width: 1439.98px) {
+  .rs-steps__spollers_item {
+    padding-left: 65px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-steps__spollers_item {
+    padding-left: 0px;
+    border-bottom: 1px solid #222;
+  }
+}
+.rs-steps__spollers_item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media (max-width: 1439.98px) {
+  .rs-steps__spollers_item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-steps__spollers_item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 991.98px) {
+  .rs-steps__spollers_item:not(:last-child) .rs-steps__spollers_number::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 110%;
+    border: 1px dashed var(--primary-color, #7f5b47);
+  }
+}
+.rs-steps__spollers_title {
+  width: 100%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+.rs-steps__spollers_number {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 991.98px) {
+  .rs-steps__spollers_number::after {
+    content: ".";
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+@media (min-width: 991.98px) {
+  .rs-steps__spollers_number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-right: 20px;
+    border-radius: 50%;
+    color: var(--primary-color, #7f5b47);
+    border: 1px solid var(--primary-color, #7f5b47);
+    background-color: #000;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 67px;
+            flex: 0 0 67px;
+    width: 67px;
+    height: 67px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: 700;
+    font-size: 22px;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1439.98px) {
+  .rs-steps__spollers_number {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50px;
+            flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 991.98px) {
+  ._spoller-active .rs-steps__spollers_number {
+    color: #fff;
+    border-color: #fff;
+  }
+}
+.rs-steps__spollers_content {
+  -webkit-transition: padding 0.3s ease 0s;
+  transition: padding 0.3s ease 0s;
+}
+@media (min-width: 991.98px) {
+  .rs-steps__spollers_content {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1439.98px) {
+  .rs-steps__spollers_content {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+@media (min-width: 991.98px) {
+  ._spoller-active .rs-steps__spollers_content {
+    padding-top: 0px;
+    padding-bottom: 8px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-steps__spollers_content {
+    padding-bottom: 20px;
+  }
+  ._spoller-active .rs-steps__spollers_content {
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-steps__spollers_body {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+.rs-steps__spollers_body .rs-steps__img {
+  margin-top: 8px;
+}
+@media (min-width: 991.98px) {
+  .rs-steps__spollers_body .rs-steps__img {
+    display: none;
+  }
+}
+.rs-steps__spollers_body p {
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 160%;
+}
+@media (max-width: 1559.98px) {
+  .rs-steps__spollers_body p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1439.98px) {
+  .rs-steps__spollers_body p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-steps__spollers_body p {
+    font-size: 13px;
+    line-height: 140%;
+  }
+}
+.rs-steps__spollers_body p:not(:last-child) {
+  margin-bottom: 15px;
+}
+@media (max-width: 991.98px) {
+  .rs-steps__spollers_body p:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+@media (min-width: 991.98px) {
+  .rs-steps__spollers_text {
+    min-height: 60px;
+  }
+}
+.rs-steps__picture {
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 991.98px) {
+  .rs-steps__picture {
+    max-width: 50.157%;
+    padding-bottom: 43.8%;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1559.98px) {
+  .rs-steps__picture {
+    max-width: 50%;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-steps__picture {
+    display: none;
+  }
+}
+@media (min-width: 991.98px) {
+  .rs-steps__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .rs-steps__img._spoller-active {
+    display: block;
+  }
+}
+.rs-steps__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
